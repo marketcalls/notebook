@@ -1,0 +1,77 @@
+{
+ "metadata": {
+  "name": "",
+  "signature": "sha256:93e86515b49a72772d9fdd0cfd0a07d929c798b818b0318694b09cc52e82070c"
+ },
+ "nbformat": 3,
+ "nbformat_minor": 0,
+ "worksheets": [
+  {
+   "cells": [
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "import matplotlib.pyplot as plt\n",
+      "import matplotlib.dates as mdates\n",
+      "import datetime as dt\n",
+      "import plotly.plotly as py\n",
+      "from plotly.graph_objs import *\n",
+      "import marketcalls\n",
+      "fromdate=datetime.datetime(2014,02,20,00,00,00)\n",
+      "enddate=datetime.datetime(2015,03,13,00,00)\n",
+      "py.iplot(marketcalls.nseeod(\"ICICIBANK\",\"PNB\",fromdate,enddate),filename='Marketcalls')\n"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "html": [
+        "<iframe id=\"igraph\" scrolling=\"no\" style=\"border:none;\"seamless=\"seamless\" src=\"https://plot.ly/~rajandran/9.embed\" height=\"525\" width=\"100%\"></iframe>"
+       ],
+       "metadata": {},
+       "output_type": "pyout",
+       "prompt_number": 5,
+       "text": [
+        "<plotly.tools.PlotlyDisplay at 0xb16fa20>"
+       ]
+      }
+     ],
+     "prompt_number": 5
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "py.iplot(marketcalls.nseeod(\"CANBK\",\"PNB\",fromdate,enddate),filename='BANKSTOCKS')"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "html": [
+        "<iframe id=\"igraph\" scrolling=\"no\" style=\"border:none;\"seamless=\"seamless\" src=\"https://plot.ly/~rajandran/12.embed\" height=\"525\" width=\"100%\"></iframe>"
+       ],
+       "metadata": {},
+       "output_type": "pyout",
+       "prompt_number": 6,
+       "text": [
+        "<plotly.tools.PlotlyDisplay at 0xafa2668>"
+       ]
+      }
+     ],
+     "prompt_number": 6
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    }
+   ],
+   "metadata": {}
+  }
+ ]
+}
